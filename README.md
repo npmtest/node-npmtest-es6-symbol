@@ -1,6 +1,6 @@
 # npmtest-es6-symbol
 
-#### basic test coverage for  es6-symbol (v3.1.1)  [![npm package](https://img.shields.io/npm/v/npmtest-es6-symbol.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-es6-symbol) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-es6-symbol.svg)](https://travis-ci.org/npmtest/node-npmtest-es6-symbol)
+#### basic test coverage for  [es6-symbol (v3.1.1)](https://github.com/medikoo/es6-symbol#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-es6-symbol.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-es6-symbol) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-es6-symbol.svg)](https://travis-ci.org/npmtest/node-npmtest-es6-symbol)
 
 #### ECMAScript 6 Symbol polyfill
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-es6-symbol/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-es6-symbol/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-es6-symbol/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-es6-symbol/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-es6-symbol/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-es6-symbol/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-es6-symbol/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-es6-symbol/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-es6-symbol/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-es6-symbol/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-es6-symbol/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-es6-symbol/build/coverage.html/index.html)
 
@@ -35,10 +35,30 @@
 ```json
 
 {
-    "name": "es6-symbol",
-    "version": "3.1.1",
+    "author": {
+        "name": "Mariusz Nowak",
+        "url": "http://www.medikoo.com/"
+    },
+    "bugs": {
+        "url": "https://github.com/medikoo/es6-symbol/issues"
+    },
+    "dependencies": {
+        "d": "1",
+        "es5-ext": "~0.10.14"
+    },
     "description": "ECMAScript 6 Symbol polyfill",
-    "author": "Mariusz Nowak <medyk@medikoo.com> (http://www.medikoo.com/)",
+    "devDependencies": {
+        "tad": "~0.2.7",
+        "xlint": "~0.2.2",
+        "xlint-jslint-medikoo": "~0.1.4"
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "bf00ef4fdab6ba1b46ecb7b629b4c7ed5715cc77",
+        "tarball": "https://registry.npmjs.org/es6-symbol/-/es6-symbol-3.1.1.tgz"
+    },
+    "gitHead": "0b28a2d969d7b77532bc32b66c34214acf445771",
+    "homepage": "https://github.com/medikoo/es6-symbol#readme",
     "keywords": [
         "symbol",
         "private",
@@ -49,25 +69,25 @@
         "ponyfill",
         "polyfill"
     ],
+    "license": "MIT",
+    "maintainers": [
+        {
+            "name": "medikoo"
+        }
+    ],
+    "name": "es6-symbol",
+    "optionalDependencies": {},
     "repository": {
         "type": "git",
         "url": "git://github.com/medikoo/es6-symbol.git"
-    },
-    "dependencies": {
-        "d": "1",
-        "es5-ext": "~0.10.14"
-    },
-    "devDependencies": {
-        "tad": "~0.2.7",
-        "xlint": "~0.2.2",
-        "xlint-jslint-medikoo": "~0.1.4"
     },
     "scripts": {
         "lint": "node node_modules/xlint/bin/xlint --linter=node_modules/xlint-jslint-medikoo/index.js --no-cache --no-stream",
         "lint-console": "node node_modules/xlint/bin/xlint --linter=node_modules/xlint-jslint-medikoo/index.js --watch",
         "test": "node ./node_modules/tad/bin/tad"
     },
-    "license": "MIT"
+    "version": "3.1.1",
+    "bin": {}
 }
 ```
 
